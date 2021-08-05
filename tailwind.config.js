@@ -7,6 +7,9 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      boxShadow: {
+        md: "0 0px 8px 0 rgba(0, 0, 0, 0.25)",
+      },
       colors: {
         transparent: "transparent",
         current: "currentColor",
@@ -25,7 +28,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      boxShadow: ["hover"],
+    },
   },
   plugins: [],
 };

@@ -9,6 +9,8 @@ import { FeatureColumnComponent } from './components/feature-column/feature-colu
 import { CategoriesComponent } from './components/categories/categories.component';
 import { CategoryButtonComponent } from './components/category-button/category-button.component';
 import { CategoryNavComponent } from './components/category-nav/category-nav.component';
+import { QuoteCarouselComponent } from './components/quote-carousel/quote-carousel.component';
+import { QuoteCardComponent } from './components/quote-card/quote-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CategoryNavComponent } from './components/category-nav/category-nav.com
     FeatureColumnComponent,
     CategoriesComponent,
     CategoryButtonComponent,
-    CategoryNavComponent
+    CategoryNavComponent,
+    QuoteCarouselComponent,
+    QuoteCardComponent
   ],
   imports: [
     BrowserModule

@@ -13,26 +13,17 @@
   ></div>
   <div class="flex flex-row justify-center w-full py-8 overflow-visible">
     <app-quote-card
-      text="So essentially a network state is a state with enough power (violence) to subjugate any existing legacy nation state."
-      author="Nick"
-      author_bg="Sociologist & Author"
-    ></app-quote-card>
-    <app-quote-card
-      text="I wrote a few thoughts about Network States emerging from Network Unions, mostly sparked from considering the Free State Project in New Hampshire."
-      author="Christopher"
-      author_bg="InnovationInGovernance.com"
-    ></app-quote-card>
-    <app-quote-card
-      text="The term ‘network state’ somehow implies that we are competing head-on with legacy nation-states, which may not necessarily be the case."
-      author="Jim"
-      author_bg="Entrepreneur & Nomad"
+      *ngFor="let quote of currentQuotes"
+      [text]="quote.quote"
+      [author]="quote.author"
+      [author_bg]="quote.author_bg"
     ></app-quote-card>
   </div>
   <div class="flex justify-center">
-    <button class="mx-4">
+    <button class="mx-4" (click)="shiftLeft()">
       <img src="../../../assets/left.svg" alt="left" />
     </button>
-    <button class="mx-4">
+    <button class="mx-4" (click)="shiftRight()">
       <img src="../../../assets/right.svg" alt="right" />
     </button>
   </div>

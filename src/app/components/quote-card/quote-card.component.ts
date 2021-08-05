@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class QuoteCardComponent implements OnInit {
   @Input() text: string;
+  @Input() author: string;
+  @Input() author_bg: string;
 
   constructor() {}
 

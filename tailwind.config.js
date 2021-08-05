@@ -7,9 +7,18 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
-      fontSize: {
-        sm: "14px",
-        lg: "34px",
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        primary: {
+          DEFAULT: "#565656",
+        },
+        highlight: {
+          DEFAULT: "#B2FFA9",
+        },
+        secondary: {
+          DEFAULT: "#B2ABF2",
+        },
       },
     },
   },

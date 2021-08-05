@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Work Sans", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .section {
   width: 100vw;
   padding: 100px;

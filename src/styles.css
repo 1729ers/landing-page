@@ -24,6 +24,5 @@ p {
 }
 
 .section {
-  width: 100vw;
-  padding: 100px;
+  width: 100%;
 }

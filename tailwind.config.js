@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       boxShadow: {
         md: "0 0px 8px 0 rgba(0, 0, 0, 0.25)",
+        highlight: "0 0px 8px 0 rgba(178, 255, 169, 0.25)",
       },
       colors: {
         transparent: "transparent",

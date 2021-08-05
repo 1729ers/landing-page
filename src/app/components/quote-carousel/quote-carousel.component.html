@@ -13,7 +13,7 @@
   ></div>
   <div class="flex flex-row justify-center w-full py-8 overflow-visible">
     <app-quote-card
-      *ngFor="let quote of currentQuotes"
+      *ngFor="let quote of quotes"
       [text]="quote.quote"
       [author]="quote.author"
       [author_bg]="quote.author_bg"

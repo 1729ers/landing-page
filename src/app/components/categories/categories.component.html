@@ -4,5 +4,5 @@
     selectedCategory="{{ activeCategory }}"
     (selectionEvent)="setActive($event)"
   ></app-category-nav>
-  <app-quote-carousel></app-quote-carousel>
+  <app-quote-carousel [quotes]="currentQuotes"></app-quote-carousel>
 </div>

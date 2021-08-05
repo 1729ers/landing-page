@@ -6,7 +6,12 @@ module.exports = {
   },
   darkMode: "class", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        sm: "14px",
+        lg: "34px",
+      },
+    },
   },
   variants: {
     extend: {},

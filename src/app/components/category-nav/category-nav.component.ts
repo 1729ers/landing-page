@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./category-nav.component.css'],
 })
 export class CategoryNavComponent implements OnInit {
-  @Input() selectedCategory: string = 'Network states';
+  @Input() selectedCategory: string;
   @Output() selectionEvent = new EventEmitter<string>();
 
   constructor() {}

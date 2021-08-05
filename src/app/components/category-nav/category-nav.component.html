@@ -1,0 +1,42 @@
+<div class="category-nav flex justify-center flex-wrap py-4">
+  <app-category-button
+    text="Crypto"
+    [selected]="selectedCategory === 'Crypto'"
+    (clickEvent)="selectCategory($event)"
+  ></app-category-button>
+  <app-category-button
+    text="Network states"
+    [selected]="selectedCategory === 'Network states'"
+    (clickEvent)="selectCategory($event)"
+  ></app-category-button>
+  <app-category-button
+    text="DAOs"
+    [selected]="selectedCategory === 'DAOs'"
+    (clickEvent)="selectCategory($event)"
+  ></app-category-button>
+  <app-category-button
+    text="Startup cities"
+    [selected]="selectedCategory === 'Startup cities'"
+    (clickEvent)="selectCategory($event)"
+  ></app-category-button>
+  <app-category-button
+    text="Web3"
+    [selected]="selectedCategory === 'Web3'"
+    (clickEvent)="selectCategory($event)"
+  ></app-category-button>
+  <app-category-button
+    text="Blockchain"
+    [selected]="selectedCategory === 'Blockchain'"
+    (clickEvent)="selectCategory($event)"
+  ></app-category-button>
+  <app-category-button
+    text="DeFi"
+    [selected]="selectedCategory === 'DeFi'"
+    (clickEvent)="selectCategory($event)"
+  ></app-category-button>
+  <app-category-button
+    text="Memes"
+    [selected]="selectedCategory === 'Memes'"
+    (clickEvent)="selectCategory($event)"
+  ></app-category-button>
+</div>

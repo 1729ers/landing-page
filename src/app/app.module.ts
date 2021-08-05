@@ -6,6 +6,9 @@ import { PrimaryCtaComponent } from './components/primary-cta/primary-cta.compon
 import { CtaButtonComponent } from './components/cta-button/cta-button.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { FeatureColumnComponent } from './components/feature-column/feature-column.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { CategoryButtonComponent } from './components/category-button/category-button.component';
+import { CategoryNavComponent } from './components/category-nav/category-nav.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { FeatureColumnComponent } from './components/feature-column/feature-colu
     PrimaryCtaComponent,
     CtaButtonComponent,
     FeaturesComponent,
-    FeatureColumnComponent
+    FeatureColumnComponent,
+    CategoriesComponent,
+    CategoryButtonComponent,
+    CategoryNavComponent
   ],
   imports: [
     BrowserModule

@@ -23,11 +23,20 @@ p {
   font-weight: 300;
 }
 
-.quote {
-  font-size: 20px;
-}
-
 .section {
   width: 100%;
   padding: 100px 0px;
+}
+
+.quote-carousel {
+  transition: transform 0.5s;
+}
+
+.quote-card {
+  width: 400px;
+  margin: 0px 24px;
+}
+
+.quote {
+  font-size: 20px;
 }

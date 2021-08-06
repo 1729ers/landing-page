@@ -9,9 +9,20 @@
       from-primary
       via-transparent
       to-primary
+      z-10
     "
   ></div>
-  <div class="flex flex-row justify-center w-full py-8 overflow-visible">
+  <div
+    class="
+      quote-carousel
+      flex flex-row
+      justify-center
+      w-full
+      py-8
+      overflow-visible
+    "
+    [style.transform]="'translateX(' + offset + 'px)'"
+  >
     <app-quote-card
       *ngFor="let quote of quotes"
       [text]="quote.quote"
@@ -20,11 +31,19 @@
     ></app-quote-card>
   </div>
   <div class="flex justify-center">
-    <button class="mx-4" (click)="shiftLeft()">
+    <button
+      class="mx-4"
+      (click)="shiftLeft()"
+      [ngClass]="{ 'opacity-50 cursor-default': index === 0 }"
+    >
       <img src="../../../assets/left.svg" alt="left" />
     </button>
     <button class="mx-4" (click)="shiftRight()">
-      <img src="../../../assets/right.svg" alt="right" />
+      <img
+        src="../../../assets/right.svg"
+        alt="right"
+        [ngClass]="{ 'opacity-50 cursor-default': index === quotes.length - 1 }"
+      />
     </button>
   </div>
 </div>

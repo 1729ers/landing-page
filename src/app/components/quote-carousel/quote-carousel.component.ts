@@ -7,17 +7,30 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class QuoteCarouselComponent implements OnInit {
   @Input() quotes: any[];
+  offset: number;
+  index: number;
 
   constructor() {}
 
-  ngOnInit(): void {}
-
-  shiftRight(): void {
-    // shift order of quote cards to the right, the last card will become the first card
-    this.quotes.unshift(this.quotes.pop());
+  ngOnInit(): void {
+    // initialize index as the middle card
+    this.index = ~~(this.quotes.length / 2);
+    console.log(this.index);
+    this.offset = 0;
   }
+
   shiftLeft(): void {
-    // shift order of quote cards to the left, the first card will become the last card
-    this.quotes.push(this.quotes.shift());
+    if (this.index > 0) {
+      // 448 is the width of a card + its margins
+      this.offset = this.offset + 448;
+      this.index -= 1;
+    }
+  }
+  shiftRight(): void {
+    if (this.index < this.quotes.length - 1) {
+      // 448 is the width of a card + its margins
+      this.offset = this.offset - 448;
+      this.index += 1;
+    }
   }
 }

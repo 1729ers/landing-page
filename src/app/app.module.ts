@@ -11,6 +11,10 @@ import { CategoryButtonComponent } from './components/category-button/category-b
 import { CategoryNavComponent } from './components/category-nav/category-nav.component';
 import { QuoteCarouselComponent } from './components/quote-carousel/quote-carousel.component';
 import { QuoteCardComponent } from './components/quote-card/quote-card.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { SlidingLogosComponent } from './components/sliding-logos/sliding-logos.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { FinalCtaComponent } from './components/final-cta/final-cta.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { QuoteCardComponent } from './components/quote-card/quote-card.component
     CategoryButtonComponent,
     CategoryNavComponent,
     QuoteCarouselComponent,
-    QuoteCardComponent
+    QuoteCardComponent,
+    ProjectsComponent,
+    SlidingLogosComponent,
+    LogoComponent,
+    FinalCtaComponent
   ],
   imports: [
     BrowserModule

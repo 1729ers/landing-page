@@ -15,7 +15,6 @@ export class QuoteCarouselComponent implements OnInit {
   ngOnInit(): void {
     // initialize index as the middle card
     this.index = ~~(this.quotes.length / 2);
-    console.log(this.index);
     this.offset = 0;
   }
 

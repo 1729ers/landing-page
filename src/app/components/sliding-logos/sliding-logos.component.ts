@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SlidingLogosComponent implements OnInit {
   // right = 1, left = -1
   @Input() direction: number;
+  @Input() logos: string[];
 
   constructor() {}
 

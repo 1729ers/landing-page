@@ -1,18 +1,7 @@
-<div class="flex items-center justify-center my-8 overflow-visible">
+<div class="flex items-center justify-between my-8 overflow-visible w-full">
   <app-logo
+    *ngFor="let logo of logos"
     [direction]="direction"
-    src="../../../assets/portanorte.png"
-  ></app-logo>
-  <app-logo
-    [direction]="direction"
-    src="../../../assets/fairground.png"
-  ></app-logo>
-  <app-logo
-    [direction]="direction"
-    src="../../../assets/bacondao.png"
-  ></app-logo>
-  <app-logo
-    [direction]="direction"
-    src="../../../assets/citydao.png"
+    [src]="logo"
   ></app-logo>
 </div>
